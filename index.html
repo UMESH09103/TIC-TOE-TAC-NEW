@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tic Tac Toe</h1>
+        <label for="difficulty">Select Difficulty:</label>
+        <select id="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <p>Current Difficulty: <span id="current-difficulty">Easy</span></p>
+        
+        <!-- Color change button -->
+        <button id="color-btn">Change Color Theme</button>
+        
+        <div class="board">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+        <button id="new-btn">New Game</button>
+        <div class="message-container hide">
+            <p id="message"></p>
+            <button id="btn">Restart</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+    

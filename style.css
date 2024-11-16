@@ -1,0 +1,177 @@
+/* Root variables for default theme */
+:root {
+    --background-gradient: linear-gradient(to bottom right, #f8b195, #f67280, #c06c84);
+    --primary-color: #6c5b7b;
+    --secondary-color: #ffffff;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: var(--background-gradient);
+    color: var(--secondary-color);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Game container */
+.game-container {
+    margin: 20px auto;
+    padding: 20px;
+    width: 320px;
+    background: #ffffff22;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+}
+
+/* Difficulty selector */
+label {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: var(--secondary-color);
+}
+
+select {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+select:hover {
+    background-color: #f67280;
+}
+
+select:focus {
+    box-shadow: 0 0 10px 2px #f67280;
+}
+
+/* Current Difficulty display */
+#current-difficulty {
+    font-weight: bold;
+    color: #ffd3b6;
+    font-size: 1.2rem;
+    margin-left: 5px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    background: #ffffffdd;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box:disabled {
+    cursor: not-allowed;
+    background: #cccccc;
+    color: #666;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #355c7d;
+}
+
+/* Message container */
+.message-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: #ffffff22;
+    border-radius: 10px;
+    color: var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.hide {
+    display: none;
+}
+
+/* Color-changing themes */
+.theme-1 {
+    --background-gradient: linear-gradient(to bottom right, #4facfe, #00f2fe);
+    --primary-color: #4facfe;
+    --secondary-color: #ffffff;
+}
+
+.theme-2 {
+    --background-gradient: linear-gradient(to bottom right, #43cea2, #185a9d);
+    --primary-color: #43cea2;
+    --secondary-color: #ffffff;
+}
+
+.theme-3 {
+    --background-gradient: linear-gradient(to bottom right, #ff512f, #dd2476);
+    --primary-color: #ff512f;
+    --secondary-color: #ffffff;
+}
+
+/* Style for Color Change Button */
+#color-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#color-btn:hover {
+    background: #00f2fe;
+}
+
